@@ -10,6 +10,7 @@ Source0:        %{url}/archive/%{version}/%{name}-%{version}.tar.gz
 # Build Deps
 
 BuildRequires:  gcc
+BuildRequires:  g++
 BuildRequires:  git
 BuildRequires:  meson >= 0.48.0
 BuildRequires:  cmake
