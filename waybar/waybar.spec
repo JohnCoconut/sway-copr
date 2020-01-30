@@ -52,6 +52,7 @@ Highly customizable Wayland bar for Sway and Wlroots based compositors.
 %files
 %license LICENSE
 %doc README.md
+%{_mandir}/man5/waybar*.5*
 %{_sysconfdir}/xdg/waybar/
 %{_bindir}/waybar
 
