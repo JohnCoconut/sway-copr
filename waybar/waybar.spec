@@ -48,6 +48,15 @@ Highly customizable Wayland bar for Sway and Wlroots based compositors.
 
 %install
 %meson_install
+# disable systemd user service by default
+%{__mkdir_p} %{buildroot}/%{_userpresetdir}
+echo 'disable %{name}.service' >%{buildroot}/%{_userpresetdir}/90-%{name}.preset
+
+%post
+%systemd_user_post %{name}.service
+
+%preun
+%systemd_user_preun %{name}.service
 
 %files
 %license LICENSE
