@@ -17,7 +17,8 @@ BuildRequires:	pkgconfig(pango)
 BuildRequires:	pkgconfig(pangocairo)
 BuildRequires:	pkgconfig(glib-2.0)
 BuildRequires:	pkgconfig(gobject-2.0)
-BuildRequires:	scdoc >= 1.9.7 #To fix issue 213
+#To fix issue 213
+BuildRequires:	scdoc >= 1.9.7
 BuildRequires:  pkgconfig(gdk-pixbuf-2.0)
 
 %description
