@@ -45,5 +45,5 @@ swaybg is a wallpaper utility for Wayland compositors. It is compatible with any
 %doc README.*
 
 %changelog
-* Thu Jan 30 2020 João Pinto <jpinto@barcodeu.com> 0.10.0-1
+* Thu Jan 30 2020 João Pinto <jpinto@barcodeu.com> 1.0-1
 - Initial RPM release
