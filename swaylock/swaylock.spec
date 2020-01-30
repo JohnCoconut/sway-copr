@@ -48,7 +48,7 @@ swaylock is a screen locking utility for Wayland compositors.
 %doc README.*
 %{_bindir}/swaylock
 %{_datadir}/bash-completion/completions/swaylock
-%{_datadir}/fish/completions/swaylock.fish
+%exclude %{_datadir}/fish/completions/swaylock.fish
 %{_datadir}/zsh/site-functions/_swaylock
 %{_mandir}/man1/swaylock.1.gz
 %config %{_sysconfdir}/pam.d/swaylock

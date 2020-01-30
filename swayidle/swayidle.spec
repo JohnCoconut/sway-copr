@@ -44,7 +44,7 @@ with any Wayland compositor which implements the KDE idle protocol.
 %doc README.*
 %{_bindir}/swayidle
 %{_datadir}/bash-completion/completions/swayidle
-%{_datadir}/fish/completions/swayidle.fish
+%exclude %{_datadir}/fish/completions/swayidle.fish
 %{_datadir}/zsh/site-functions/_swayidle
 
 %{_mandir}/man1/swayidle.1.gz
