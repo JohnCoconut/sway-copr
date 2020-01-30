@@ -35,7 +35,7 @@ BuildRequires:  pkgconfig(wayland-egl)
 BuildRequires:  pkgconfig(wayland-protocols) >= 1.17
 BuildRequires:  pkgconfig(wayland-server) >= 1.16
 BuildRequires:  pkgconfig(xkbcommon)
-BuildRequires:  pkgconfig(xcb-errors)
+#BuildRequires:  pkgconfig(xcb-errors)
 #BuildRequires:  pkgconfig(freerdp2)
 
 # Runtime Deps
