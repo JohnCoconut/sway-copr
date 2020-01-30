@@ -82,7 +82,7 @@ or about 50,000 lines of code you were going to write anyway.
 %{_bindir}/find %{_builddir}/%{name}-%{version} -name '.gitignore' -delete
 
 %build
-%meson -Dwerror=false
+%meson -Dwerror=false -Dxcb-errors=disabled
 %meson_build
 
 
