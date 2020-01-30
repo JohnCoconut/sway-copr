@@ -78,10 +78,10 @@ sed -i "s|^output \* bg .*|output * bg /usr/share/backgrounds/f%{fedora}/default
 %{_bindir}/swaynag
 %{_datadir}/wayland-sessions/sway.desktop
 %{_datadir}/bash-completion/completions/sway*
-%exclude %{_datadir}/fish/completions/sway*
+%exclude %{_datadir}/.«fish/vendor_completions.d/sway*
 %{_datadir}/zsh/site-functions/_sway*
 %{_datadir}/backgrounds/sway/*.png
 
 %changelog
-* Thu Jan 30 2020 João Pinto <jpinto@barcodeu.com> 0.10.0-1
+* Thu Jan 30 2020 João Pinto <jpinto@barcodeu.com> 1.4-1
 - Initial RPM release
