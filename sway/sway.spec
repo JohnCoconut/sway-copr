@@ -27,9 +27,10 @@ BuildRequires:  pkgconfig(wayland-egl)
 BuildRequires:  pkgconfig(wayland-protocols) >= 1.14
 BuildRequires:  pkgconfig(wayland-server)
 BuildRequires:  pkgconfig(libevdev)
-BuildRequires:  wlroots-devel >= 0.6
+BuildRequires:  pkgconfig(libsystemd) >= 239
+BuildRequires:  wlroots-devel >= 0.10
 BuildRequires:  wayland-devel
-BuildRequires:  scdoc
+BuildRequires:  scdoc >= 1.9.2
 Requires:       swaybg
 # Dmenu is the default launcher in sway
 Requires:       dmenu
@@ -51,7 +52,7 @@ Sway is a tiling window manager supporting Wayland compositor protocol and i3-co
 mkdir %{_target_platform}
 
 %build
-%meson -Dwerror=false
+%meson -Dwerror=false -Dfish-completions=false
 %meson_build
 
 %install
@@ -78,7 +79,7 @@ sed -i "s|^output \* bg .*|output * bg /usr/share/backgrounds/f%{fedora}/default
 %{_bindir}/swaynag
 %{_datadir}/wayland-sessions/sway.desktop
 %{_datadir}/bash-completion/completions/sway*
-%exclude %{_datadir}/.«fish/vendor_completions.d/sway*
+%exclude %{_datadir}/fish/vendor_completions.d/sway*
 %{_datadir}/zsh/site-functions/_sway*
 %{_datadir}/backgrounds/sway/*.png
 
