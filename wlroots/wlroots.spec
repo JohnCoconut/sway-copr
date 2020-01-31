@@ -12,7 +12,7 @@ Source0:        %{url}/archive/%{version}/%{name}-%{version}.tar.gz
 BuildRequires:  gcc
 BuildRequires:  g++
 BuildRequires:  git
-BuildRequires:  meson >= 0.48.0
+BuildRequires:  meson >= 0.51.2
 BuildRequires:  cmake
 BuildRequires:  pkgconfig
 BuildRequires:  pkgconfig(egl)

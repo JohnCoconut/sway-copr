@@ -11,11 +11,13 @@ BuildRequires:  git
 BuildRequires:  gcc
 BuildRequires:  clang
 BuildRequires:  meson
-BuildRequires:  wayland-devel
-BuildRequires:  wayland-protocols-devel
-BuildRequires:  cairo-devel
-BuildRequires:  gdk-pixbuf2-devel
+BuildRequires:  pkgconfig(wayland-scanner)
+BuildRequires:  pkgconfig(wayland-client)
+BuildRequires:  pkgconfig(wayland-protocols) >= 1.14
+BuildRequires:  pkgconfig(cairo)
+BuildRequires:  pkgconfig(gdk-pixbuf-2.0)
 BuildRequires:  scdoc
+Requires:       cairo
 Recommends:     sway
 
 %description

@@ -12,8 +12,9 @@ BuildRequires:  gcc
 BuildRequires:  clang
 BuildRequires:  cmake
 BuildRequires:  meson >= 0.48.0
+BuildRequires:  pkgconfig(wayland-client)
 BuildRequires:  pkgconfig(wayland-server)
-BuildRequires:  pkgconfig(wayland-server)
+BuildRequires:  pkgconfig(wayland-scanner)
 BuildRequires:  pkgconfig(wayland-protocols) >= 1.14
 BuildRequires:  pkgconfig(libsystemd)
 BuildRequires:  scdoc
