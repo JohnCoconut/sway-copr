@@ -62,8 +62,12 @@ echo 'disable %{name}.service' >%{buildroot}/%{_userpresetdir}/90-%{name}.preset
 %license LICENSE
 %doc README.md
 %{_mandir}/man5/waybar*.5*
-%{_sysconfdir}/xdg/waybar/
-%{_bindir}/waybar
+%{_sysconfdir}/xdg/%{name}
+%config(noreplace) %{_sysconfdir}/xdg/%{name}/config
+%config(noreplace) %{_sysconfdir}/xdg/%{name}/style.css
+%{_bindir}/%{name}
+%{_userunitdir}/%{name}.service
+%{_userpresetdir}/90-%{name}.preset
 
 
 %changelog
