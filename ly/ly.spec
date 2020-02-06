@@ -1,5 +1,5 @@
 Name:       ly
-Version:    0.4.0
+Version:    0.5.0
 Release:    1%{?dist}
 Summary:    TUI (ncurses-like) display manager 
 License:    MIT
@@ -21,7 +21,6 @@ BuildRequires:  pkgconfig(ncurses)
 
 %prep
 %autosetup
-make github
 
 %build
 make
@@ -30,5 +29,9 @@ make install
 %files
 
 %changelog
+* Wed Feb 5 2020 João Pinto <jpinto@barcodeu.com> 0.5.0-1
+- Bump version to 0.5.0
+- Fixed build flow
+
 * Fri Jan 31 2020 João Pinto <jpinto@barcodeu.com> 0.4.0-1
 - Initial RPM release
