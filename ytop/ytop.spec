@@ -6,8 +6,10 @@ Summary:	TUI based system monitor in Rust
 Group: 		Applications/System
 License:	MIT
 URL:		https://github.com/cjbassi/ytop
-Source0:	%{url}/releases/download/%{version}/%{name}-%{version}-x86_64-unknown-linux-gnu.tar.gz
+Source0:	%{url}/archive/%{version}.tar.gz
 
+
+BuildRequires:  cargo
 
 %description
 %{summary}
@@ -16,6 +18,7 @@ Source0:	%{url}/releases/download/%{version}/%{name}-%{version}-x86_64-unknown-l
 %autosetup
 
 %build
+cargo build --release --locked --all-features
 
 %files
 
