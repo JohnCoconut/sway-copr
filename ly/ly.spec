@@ -23,12 +23,16 @@ BuildRequires:  pkgconfig(ncurses)
 %autosetup
 
 %build
+make github
 make
 make install
 
 %files
 
 %changelog
+* Fri Mar 06 2020 John Zhang <johannkokos@example.com> 0.5.0-1
+- Fix build
+
 * Wed Feb 5 2020 João Pinto <jpinto@barcodeu.com> 0.5.0-1
 - Bump version to 0.5.0
 - Fixed build flow

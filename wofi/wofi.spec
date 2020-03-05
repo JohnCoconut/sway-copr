@@ -1,5 +1,5 @@
 Name:		wofi
-Version:	1.0
+Version:	1.1
 Release:	1%{?dist}
 Summary:	Wofi is a launcher/menu program for wlroots based wayland compositors
 
@@ -34,5 +34,8 @@ BuildRequires:	pkgconfig(wayland-client)
 %exclude %{_exec_prefix}/lib/debug/usr/bin/*.debug
 
 %changelog
+* Fri Mar 06 2020 John Zhang <johannkokos@example.com> 1.1-1
+- Bump to version 1.1
+
 * Fri Jan 31 2020 João Pinto <jpinto@barcodeu.com> 1.0-1
 - Initial RPM release

@@ -2,7 +2,7 @@
 %define waybar_dir Waybar-%{version}
 
 Name:       waybar
-Version:    0.9.0
+Version:    0.9.1
 Release:    1%{?dist}
 Summary:    Highly customizable Wayland bar for Sway and Wlroots based compositors.
 License:    MIT
@@ -71,5 +71,8 @@ echo 'disable %{name}.service' >%{buildroot}/%{_userpresetdir}/90-%{name}.preset
 
 
 %changelog
+* Fri Mar 06 2020 John Zhang <johannkokos@example.com> 0.9.1-1
+- Bump to version 0.9.1
+
 * Thu Jan 30 2020 João Pinto <jpinto@barcodeu.com> 0.9.0-1
 - Initial RPM release
